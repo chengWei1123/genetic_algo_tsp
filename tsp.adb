@@ -83,8 +83,6 @@ procedure tsp is
         p:integer;
         longest:integer:=1;
         tmp:integer;
-        r1:integer;
-        r2:integer;
     begin
         p:=selection;
         for i in 1..gene_length-1 loop
@@ -186,7 +184,7 @@ procedure tsp is
                 mutation_rate := 50;
             end if;
             if n>3*end_condition/4 then 
-                mutation_rate := 25;
+                mutation_rate := 10;
             end if;
             if n>end_condition then
                 answer:=1;
