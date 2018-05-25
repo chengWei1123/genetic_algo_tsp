@@ -83,6 +83,8 @@ procedure tsp is
         p:integer;
         longest:integer:=1;
         tmp:integer;
+        r1:integer;
+        r2:integer;
     begin
         p:=selection;
         for i in 1..gene_length-1 loop
@@ -97,6 +99,7 @@ procedure tsp is
                 childarray(c_i)(i):=parent(p)((i+longest)mod gene_length);
             end if;
         end loop;
+        
         if random(g) mod mutation_rate = 1 then
             r1:=random(g) mod gene_length +1;
             r2:=random(g) mod gene_length +1;
@@ -186,7 +189,7 @@ procedure tsp is
             if n>3*end_condition/4 then 
                 mutation_rate := 10;
             end if;
-            if n>end_condition then
+            if n>=end_condition then
                 answer:=1;
             else 
                 answer:=0;
@@ -200,6 +203,7 @@ begin
     get(end_condition);
     put("Number of threads : ");
     get(Task_number);
+    new_line;
     Task_Load:= population_size/Task_number;
     t_start:=clock;
     reset(g);
