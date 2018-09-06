@@ -1,6 +1,31 @@
-# genetic_algo_tsp
-*Use genetic algorithm to solve Travelling salesman problem.  
-*Use muti-task in Ada to parallelize the computation of each genes' fitness.  
-*User input 1 is end condition. (end condition N means the program will end if after N generations without improvement)  
-*User input 2 is number of tasks.  
+# Solving Travelling salesman problem
+
+In this project, I tried to use genetic algorithm to solve Travelling salesman problem, additionally
+I parallelize the computation of fitness by using "task" in Ada .
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Prerequisites
+
+Installing the GNAT compiler on Linux
+
+```
+apt-get install gnat-4.3
+```
+
+### Running the program
+
+Compile and run
+
+```
+gnatmake tsp.adb
+./tsp
+```
+### User input
+
+input 1 is end condition. (end condition N means the program will end if after N generations without improvement)
+input 2 is number of tasks.
+
 
