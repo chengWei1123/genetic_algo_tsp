@@ -11,7 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 Installing the GNAT compiler on Linux
 
-```
+```sh
 apt-get install gnat-4.3
 ```
 
@@ -19,8 +19,10 @@ apt-get install gnat-4.3
 
 Compile and run
 
-```
+```sh
 gnatmake tsp.adb
+```
+```sh
 ./tsp
 ```
 ### User input
