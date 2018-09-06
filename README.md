@@ -25,7 +25,7 @@ gnatmake tsp.adb
 ```
 ### User input
 
-input 1 is end condition. (end condition N means the program will end if after N generations without improvement)
+input 1 is end condition. (end condition N means the program will end if after N generations without improvement)  
 input 2 is number of tasks.
 
 
